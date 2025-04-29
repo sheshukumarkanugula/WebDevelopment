@@ -1,0 +1,100 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* Line heigts:
+      :default:1 
+      
+    primary:#e67e22
+      background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    Tints:
+    Shades:
+    Accents : 
+    Greys : */
+
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      #fdf2e9
+      #cf711f
+      #fae5d3
+      */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+/* ////////////////////////////// */
+
+.logo {
+  height: 2.2rem;
+}
+
+/*///////////////////*/
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.03s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.center-text {
+  text-align: center;
+}
